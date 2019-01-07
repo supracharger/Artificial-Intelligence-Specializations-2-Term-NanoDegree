@@ -19,6 +19,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`3`** - turn right.
 
 **REQUIREMENT(when the environment is considered solved):** Agent must get an average score of +13 over 100 consecutive episodes.
+
 **AGENT ACHIEVED: A Max Average Score of 14.52** over 100 consecutive episodes.
 
 ### Getting Started
@@ -47,6 +48,7 @@ Follow the instructions in `Navigation.ipynb` to get started with training your 
 * Torch
 * pickle
 * matplotlib
+
 Use "pip install --yourPackage--" to install dependencies.
 
 ## Class Objects
@@ -70,5 +72,5 @@ Use Agent.Action() to get a  selected action for the state. Also, to use Epsilon
 “isRandom:eps>random.random()” to use Epsilon Greedy. Where ‘eps’ is epsilon and ‘random()’ is a random number between zero and 
 one. The following information is as follows: env_info = env.step(action)[brain_name], next_state = env_info.vector_observations[0], 
 reward = env_info.rewards[0], done = env_info.local_done[0], score += reward (To get the score for the entire episode).  Next, use 
-Agent.Step() to step the agent to the solution to solve the problem. Last, use the Jupyter notebook for more in depth detail of how 
+Agent.Step() to step the agent through each state to solve the problem. Last, use the Jupyter notebook for more in depth detail of how 
 to solve the problem, and make sure to print out the agent score periodically to know how the Agent is doing.
